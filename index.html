@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>请选择入口</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+    background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
+    min-height: 100vh;
+    display: flex; flex-direction: column;
+    justify-content: center; align-items: center;
+    color: #fff; padding: 20px;
+  }
+  h1 { font-size: 34px; margin-bottom: 8px; font-weight: 700; letter-spacing: 2px; }
+  .sub { color: rgba(255,255,255,.5); margin-bottom: 44px; font-size: 15px; }
+  .choices { display: flex; gap: 30px; flex-wrap: wrap; justify-content: center; }
+  .choice {
+    width: 280px; padding: 42px 28px;
+    background: rgba(255,255,255,.07);
+    border: 1px solid rgba(255,255,255,.12);
+    border-radius: 22px;
+    text-align: center; text-decoration: none; color: #fff;
+    transition: all .3s ease;
+    backdrop-filter: blur(12px);
+  }
+  .choice:hover {
+    background: rgba(255,255,255,.16);
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px -14px rgba(0,0,0,.5);
+    border-color: rgba(255,255,255,.3);
+  }
+  .choice .emoji { font-size: 52px; display: block; margin-bottom: 18px; }
+  .choice .title { font-size: 24px; font-weight: 600; margin-bottom: 10px; }
+  .choice .desc { font-size: 14px; color: rgba(255,255,255,.55); line-height: 1.5; }
+  .choice .domain { margin-top: 18px; font-size: 13px; color: #7aa2ff; word-break: break-all; }
+  footer { margin-top: 54px; color: rgba(255,255,255,.2); font-size: 12px; }
+  @media (max-width: 640px) { .choice { width: 100%; max-width: 340px; } }
+</style>
+</head>
+<body>
+  <h1>✦ 请选择入口</h1>
+  <p class="sub">两个独立站点，点击前往</p >
+  
+  <div class="choices">
+    <a href=" " class="choice">
+      <span class="emoji">📚</span>
+      <div class="title">按钮标题A</div>
+      <div class="desc">A的描述</div>
+      <div class="domain">6x8u.cc</div>
+    </a >
+    
+    <a href="https://7m2y.cc" class="choice">
+      <span class="emoji">🛒</span>
+      <div class="title">按钮标题B</div>
+      <div class="desc">B的描述</div>
+      <div class="domain">7m2y.cc</div>
+    </a >
+  </div>
+  
+  <footer>© 2026 · 选择入口</footer>
+</body>
+</html>
